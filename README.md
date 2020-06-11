@@ -92,3 +92,22 @@ Example ```<GPU_NUM>=0```
 ```
 CUDA_VISIBLE_DEVICES=0 python train.py
 ```
+
+---
+
+### Using TensorBoard Remotely
+Run Tensorboard on a remote server
+```
+tensorboard --logdir=runs
+```
+Then check the <PORT_NUM> displayed on the Terminal.
+
+ssh on a local machine:
+```	 
+ssh -N -f -L 127.0.0.1:<PORT_NUM>:127.0.0.1:<PORT_NUM> <USER>@<URL>
+```
+Example ```<PORT_NUM>=6006 <USER>=admin <URL>=192.168.1.3```
+```	 
+ssh -N -f -L 127.0.0.1:6006:127.0.0.1:6006 admin@192.168.1.3
+```
+Then open a browser on the local machine with the URL provided on the Terminal, e.g. ```*localhost:6006*```.
