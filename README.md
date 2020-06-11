@@ -50,3 +50,33 @@ Check Keras version
 ```
 pip list | grep Keras
 ```
+---
+
+### Using Jupyter Notebook on Local/Remote Machines
+Launch jupyter notebook kernel on a remote server
+```
+jupyter notebook --no-browser --port=<PORT_NUM>
+```
+Example ```<PORT_NUM>=8888```
+```
+jupyter notebook --no-browser --port=8888
+```
+
+Launch jupyter notebook kernel with a specific GPU on a remote server
+```
+CUDA_VISIBLE_DEVICES=<GPU_NUM> jupyter notebook --no-browser --port=<PORT_NUM>
+```
+Example ```<GPU_NUM>=0 <PORT_NUM>=8888```
+```
+CUDA_VISIBLE_DEVICES=0 jupyter notebook --no-browser --port=8888
+```
+
+ssh on a local machine
+```	 
+ssh -N -f -L 127.0.0.1:<PORT_NUM>:127.0.0.1:<PORT_NUM> <USER>@<URL>
+```
+Example ```<PORT_NUM>=8888 <USER>=admin <URL>=192.168.1.3```
+```	 
+ssh -N -f -L 127.0.0.1:8888:127.0.0.1:8888 admin@192.168.1.3
+```
+Then open a browser on the local machine with the URL provided on the Terminal, e.g. ```*localhost:8888*```.
