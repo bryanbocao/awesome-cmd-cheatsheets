@@ -80,3 +80,15 @@ Example ```<PORT_NUM>=8888 <USER>=admin <URL>=192.168.1.3```
 ssh -N -f -L 127.0.0.1:8888:127.0.0.1:8888 admin@192.168.1.3
 ```
 Then open a browser on the local machine with the URL provided on the Terminal, e.g. ```*localhost:8888*```.
+
+---
+
+### Training with GPUs
+Train a model with a specific GPU
+```
+CUDA_VISIBLE_DEVICES=<GPU_NUM> python train.py
+```
+Example ```<GPU_NUM>=0```
+```
+CUDA_VISIBLE_DEVICES=0 python train.py
+```
