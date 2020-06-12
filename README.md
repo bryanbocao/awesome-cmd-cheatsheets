@@ -50,6 +50,10 @@ Check Keras version
 ```
 pip list | grep Keras
 ```
+```
+python -c 'import keras; print(keras.__version__)'
+```
+
 ---
 
 ### Using Jupyter Notebook on Local/Remote Machines
