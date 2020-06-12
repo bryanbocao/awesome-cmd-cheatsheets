@@ -54,6 +54,11 @@ pip list | grep Keras
 python -c 'import keras; print(keras.__version__)'
 ```
 
+Check OpenCV version
+```
+python -c 'import cv2; print(cv2.__version__)'
+```
+
 ---
 
 ### Using Jupyter Notebook on Local/Remote Machines
