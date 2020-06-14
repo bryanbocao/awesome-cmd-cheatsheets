@@ -40,6 +40,10 @@ Grant read, write and execute permissions for everyone, convenient for logging
 ```
 chmod 777 <foldername/filename>
 ```
+Grant read, write and execute permissions for everyone recursively, convenient for logging
+```
+chmod -R 777 <foldername/filename>
+```
 
 Check Tensorflow version
 ```
