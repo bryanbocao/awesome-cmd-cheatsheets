@@ -63,6 +63,19 @@ Check OpenCV version
 python -c 'import cv2; print(cv2.__version__)'
 ```
 
+Add a new user
+```
+sudo adduser <new_username>
+```
+Add a user to sudo group
+```
+usermod -aG sudo <username>
+```
+Switch to another user on one terminal
+```
+su - <another_user>
+```
+
 ---
 
 ### Using Jupyter Notebook on Local/Remote Machines
