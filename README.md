@@ -57,6 +57,17 @@ Grant read, write and execute permissions for everyone recursively, convenient f
 chmod -R 777 <foldername/filename>
 ```
 
+Switch to ```colemak``` keyboard layout
+```
+setxkbmap us -variant colemak
+```
+[Reference](https://superuser.com/questions/227727/ubuntu-switch-keyboard-layout-to-colemak)
+
+Switch back to ```us-qwert``` keyboard layout
+```
+setxkbmap us
+```
+
 Check Tensorflow version
 ```
 pip list | grep tensorflow
