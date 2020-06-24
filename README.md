@@ -110,6 +110,18 @@ su - <another_user>
 
 ---
 
+### Git
+Set global user email
+```
+git config --global user.email "<you@example.com>"
+```
+Set global username
+```
+git config --global user.name "<Your Name>"
+```
+
+---
+
 ### Using Jupyter Notebook on Local/Remote Machines
 Launch jupyter notebook kernel on a remote server
 ```
