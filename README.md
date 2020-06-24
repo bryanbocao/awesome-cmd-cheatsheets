@@ -8,6 +8,18 @@ Check Ubuntu version
 lsb_release -a
 ```
 
+Change computer hostname
+```
+sudo nano /etc/hostname
+```
+Then update the old name with a new name.
+```
+sudo nano /etc/hosts
+```
+Then update any occurrence of the old name with a new name.
+
+[Reference](https://www.cyberciti.biz/faq/ubuntu-change-hostname-command/)
+
 Check global disk storage usage
 ```
 df -h
