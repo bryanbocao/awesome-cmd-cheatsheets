@@ -68,6 +68,15 @@ Switch back to ```us-qwert``` keyboard layout
 setxkbmap us
 ```
 
+Swap ```Left Alt``` with ```Left Ctrl```
+```
+sudo apt-get install gnome-tweak-tool
+gnome-tweaks
+```
+```Keyboard & Mouse -> Additional Layout Options -> Ctrl position -> Swap Left Alt with Left Ctrl```
+
+[Reference](https://askubuntu.com/questions/93624/how-do-i-swap-left-ctrl-with-left-alt-on-my-keyboard)
+
 Check Tensorflow version
 ```
 pip list | grep tensorflow
