@@ -90,6 +90,23 @@ Switch to another user on one terminal
 su - <another_user>
 ```
 
+Install ```openssh``` server
+```
+sudo apt-get install openssh-server
+```
+Verify ```ssh``` service running
+```
+sudo systemctl status ssh
+```
+Enable ```ssh``` server
+```
+sudo systemctl enable ssh
+```
+Start ```ssh``` server
+```
+sudo systemctl start ssh
+```
+
 ---
 
 ### Version Checking
