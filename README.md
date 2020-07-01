@@ -77,6 +77,23 @@ gnome-tweaks
 
 [Reference](https://askubuntu.com/questions/93624/how-do-i-swap-left-ctrl-with-left-alt-on-my-keyboard)
 
+Add a new user
+```
+sudo adduser <new_username>
+```
+Add a user to sudo group
+```
+usermod -aG sudo <username>
+```
+Switch to another user on one terminal
+```
+su - <another_user>
+```
+
+---
+
+### Version Checking
+
 Check Tensorflow version
 ```
 pip list | grep tensorflow
@@ -93,19 +110,6 @@ python -c 'import keras; print(keras.__version__)'
 Check OpenCV version
 ```
 python -c 'import cv2; print(cv2.__version__)'
-```
-
-Add a new user
-```
-sudo adduser <new_username>
-```
-Add a user to sudo group
-```
-usermod -aG sudo <username>
-```
-Switch to another user on one terminal
-```
-su - <another_user>
 ```
 
 ---
