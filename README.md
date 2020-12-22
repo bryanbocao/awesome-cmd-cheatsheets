@@ -106,6 +106,17 @@ Start ```ssh``` server
 ```
 sudo systemctl start ssh
 ```
+Rename images as preparation for video making
+[rename4video.py](https://github.com/BryanBo-Cao/quick-cheatsheets/blob/master/utils/rename4video.py)
+
+Create a video from images
+```
+ffmpeg -framerate <FRAME_RATE> -i <DATASET_DEST_IMG_PATH>/image-%05d.png -c:v libx264 -profile:v high -crf 20 -pix_fmt yuv420p <DATASET_DEST_IMG_PATH>/RGB_video.mp4
+```
+Example ```FRAME_RATE=30 DATASET_DEST_IMG_PATH=/home/username/Data/RGB_copy/```
+```
+ffmpeg -framerate 30 -i /home/username/Data/RGB_copy/image-%05d.png -c:v libx264 -profile:v high -crf 20 -pix_fmt yuv420p /home/username/Data/RGB_copy/RGB_video.mp4
+```
 
 ---
 
