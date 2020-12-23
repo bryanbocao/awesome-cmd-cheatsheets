@@ -213,3 +213,21 @@ Example ```<PORT_NUM>=6006 <USER>=admin <URL>=192.168.1.3```
 ssh -N -f -L 127.0.0.1:6006:127.0.0.1:6006 admin@192.168.1.3
 ```
 Then open a browser on the local machine with the URL provided on the Terminal, e.g. ```*localhost:6006*```.
+
+
+### Atom
+Replace delete-line shortcut ```ctrl-shift-k``` with ```ctrl-d```
+```
+Edit -> Preferences -> Keybindings
+```
+Search ```ctrl-shift-k``` in the "Search keybindings" box, find the command of delete-line
+```
+editor:delete-line
+```
+Search ```ctrl-d``` (which you want to use) in the "Search keybindings" box
+Click ```your keymap file```, then it will navigate to ```.atom/keymap.cson```, enter the following text in this file
+```
+'atom-text-editor:not([mini])':
+  'ctrl-d': 'editor:delete-line'
+```
+Save the file ```.atom/keymap.cson``` to take effect.
