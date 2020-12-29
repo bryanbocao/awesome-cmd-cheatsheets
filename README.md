@@ -121,6 +121,13 @@ ffmpeg -framerate 30 -i /home/username/Data/RGB_copy/image-%05d.png -c:v libx264
 ---
 
 ### Version Checking
+Check CUDA version
+```
+nvcc --version
+```
+```
+nvcc -V
+```
 
 Check TensorFlow version
 ```
