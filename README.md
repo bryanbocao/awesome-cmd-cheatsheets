@@ -128,6 +128,10 @@ nvcc --version
 ```
 nvcc -V
 ```
+Check CUDA version - Prerequisite
+```
+sudo apt install nvidia-cuda-toolkit
+```
 
 Check TensorFlow version
 ```
