@@ -122,9 +122,12 @@ ffmpeg -framerate 30 -i /home/username/Data/RGB_copy/image-%05d.png -c:v libx264
 
 ### Version Checking
 
-Check Tensorflow version
+Check TensorFlow version
 ```
 pip list | grep tensorflow
+```
+```
+python -c 'import tensorflow as tf; print(tf.__version__)'
 ```
 
 Check Keras version
