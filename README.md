@@ -249,4 +249,4 @@ Click ```your keymap file```, then it will navigate to ```.atom/keymap.cson```, 
 'atom-text-editor:not([mini])':
   'ctrl-d': 'editor:delete-line'
 ```
-Save the file ```.atom/keymap.cson``` to take effect.
+Save the file ```.atom/keymap.cson``` and restart Atom to take effect.
