@@ -77,6 +77,13 @@ gnome-tweaks
 
 [Reference](https://askubuntu.com/questions/93624/how-do-i-swap-left-ctrl-with-left-alt-on-my-keyboard)
 
+Adjust mouse wheel scroll speed
+```
+sudo apt install imwheel
+bash <(curl -s http://www.nicknorton.net/mousewheel.sh)
+```
+[Reference](https://dev.to/bbavouzet/ubuntu-20-04-mouse-scroll-wheel-speed-536o)
+
 Add a new user
 ```
 sudo adduser <new_username>
