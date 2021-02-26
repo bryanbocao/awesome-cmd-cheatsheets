@@ -275,3 +275,25 @@ Click ```your keymap file```, then it will navigate to ```.atom/keymap.cson```, 
   'ctrl-d': 'editor:delete-line'
 ```
 Save the file ```.atom/keymap.cson``` and restart Atom to take effect.
+
+### remote-atom
+local machine
+```
+sudo apm install remote-atom
+```
+Open Atom app: ```Packages -> Remote Atom -> Start Server```
+
+remote server
+```
+curl -o /usr/local/bin/rmate https://raw.githubusercontent.com/aurora/rmate/master/rmate
+sudo chmod +x /usr/local/bin/rmate
+```
+#### Usage
+local machine
+```
+ssh -R 52698:localhost:52698 <user@example.com>
+```
+```
+rmate <test.txt>
+```
+[Reference](https://atom.io/packages/remote-atom)
