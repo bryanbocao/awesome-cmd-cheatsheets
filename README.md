@@ -84,6 +84,24 @@ bash <(curl -s http://www.nicknorton.net/mousewheel.sh)
 ```
 [Reference](https://dev.to/bbavouzet/ubuntu-20-04-mouse-scroll-wheel-speed-536o)
 
+Stop laptop going to sleep when closing the lid
+```
+sudo nano /etc/systemd/logind.conf
+```
+Change
+```
+#HandleLidSwitch=suspend
+```
+to
+```
+HandleLidSwitch=ignore
+```
+then
+```
+sudo systemctl restart systemd-logind
+```
+[Reference](https://www.dell.com/community/Linux-General/Stop-laptop-going-to-sleep-when-closing-the-lid-UBUNTU-Server/td-p/6086201)
+
 Add a new user
 ```
 sudo adduser <new_username>
