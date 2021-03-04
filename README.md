@@ -164,6 +164,8 @@ do
 ```
 mkfs.ext4 /dev/sdb1
 ```
+and ```sudo mount /ssd``` again, you will see the new disk by ```df -h```
+
 [Reference](https://unix.stackexchange.com/questions/315063/mount-wrong-fs-type-bad-option-bad-superblock)
 
 ---
