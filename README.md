@@ -143,6 +143,29 @@ Example ```FRAME_RATE=30 DATASET_DEST_IMG_PATH=/home/username/Data/RGB_copy/```
 ffmpeg -framerate 30 -i /home/username/Data/RGB_copy/image-%05d.png -c:v libx264 -profile:v high -crf 20 -pix_fmt yuv420p /home/username/Data/RGB_copy/RGB_video.mp4
 ```
 
+Mount a new disk ```/dev/sdb1``` not shown by ```df -h``` but listed by ```ls /dev/sd*``` or ```sudo fdisk -l```
+```
+sudo vim /etc/fstab
+```
+add the below line to the end of the file:
+```
+/dev/sdb1 /ssd  ext4  defaults  0 0
+```
+```
+sudo mount /ssd
+```
+[Reference](https://askubuntu.com/questions/125257/how-do-i-add-an-additional-hard-drive)
+
+If the following problem occurs
+```
+mount: /ssd: wrong fs type, bad option, bad superblock on /dev/sdb1, missing codepage or helper program, or other error.
+```
+do
+```
+mkfs.ext4 /dev/sdb1
+```
+[Reference](https://unix.stackexchange.com/questions/315063/mount-wrong-fs-type-bad-option-bad-superblock)
+
 ---
 
 ### Version Checking
