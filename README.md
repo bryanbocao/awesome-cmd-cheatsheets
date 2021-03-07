@@ -294,6 +294,7 @@ Search ```ctrl-shift-k``` in the "Search keybindings" box, find the command of d
 editor:delete-line
 ```
 Search ```ctrl-d``` (which you want to use) in the "Search keybindings" box
+
 Click ```your keymap file```, then it will navigate to ```.atom/keymap.cson```, enter the following text in this file
 ```
 'atom-text-editor:not([mini])':
