@@ -250,7 +250,16 @@ Example ```<PORT_NUM>=8888 <USER>=admin <URL>=192.168.1.3```
 ```	 
 ssh -N -f -L 127.0.0.1:8888:127.0.0.1:8888 admin@192.168.1.3
 ```
-Then open a browser on the local machine with the URL provided on the Terminal, e.g. ```*localhost:8888*```.
+Then open a browser on the local machine with the URL provided on the Terminal, e.g. ```*localhost:8888*```
+
+Kill port <PORT_NUM> in use
+```
+lsof -ti:<PORT_NUM>
+```
+Example ```<PORT_NUM>=8880```
+```
+lsof -ti:8880
+```
 
 ---
 
