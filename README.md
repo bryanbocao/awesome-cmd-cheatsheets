@@ -178,6 +178,9 @@ nvcc --version
 ```
 nvcc -V
 ```
+```
+ls -l /usr/local | grep cuda
+```
 Check CUDA version - Prerequisite
 ```
 sudo apt install nvidia-cuda-toolkit
