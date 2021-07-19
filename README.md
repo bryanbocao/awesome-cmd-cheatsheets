@@ -131,6 +131,10 @@ Start ```ssh``` server
 ```
 sudo systemctl start ssh
 ```
+Count Files
+```
+ls | wc -l
+```
 Rename images as preparation for video making
 [rename4video.py](https://github.com/BryanBo-Cao/quick-cheatsheets/blob/master/utils/rename4video.py)
 
