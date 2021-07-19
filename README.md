@@ -135,6 +135,10 @@ Count Files
 ```
 ls | wc -l
 ```
+Count Files in ```<foldername>```
+```
+ls <foldername> | wc -l
+```
 Rename images as preparation for video making
 [rename4video.py](https://github.com/BryanBo-Cao/quick-cheatsheets/blob/master/utils/rename4video.py)
 
