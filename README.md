@@ -176,6 +176,19 @@ and ```sudo mount /ssd``` again, you will see the new disk by ```df -h```
 
 [Reference](https://unix.stackexchange.com/questions/315063/mount-wrong-fs-type-bad-option-bad-superblock)
 
+Download files from Google Drive
+```
+pip install gdown
+```
+```
+gdown https://drive.google.com/uc?id=<file_id>
+```
+Example ```https://drive.google.com/file/d/1h_8Ts11rf0GQ4_n6FgmCeBuFcWrRjJfa/view```
+```
+gdown https://drive.google.com/uc?id=1h_8Ts11rf0GQ4_n6FgmCeBuFcWrRjJfa
+```
+[Reference](https://stackoverflow.com/questions/25010369/wget-curl-large-file-from-google-drive)
+
 ---
 
 ### Version Checking
