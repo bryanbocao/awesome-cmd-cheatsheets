@@ -57,11 +57,21 @@ Grant read, write and execute permissions for everyone recursively, convenient f
 chmod -R 777 <foldername/filename>
 ```
 
-Switch to ```colemak``` keyboard layout
+Switch to ```colemak``` keyboard layout (1)
 ```
 setxkbmap us -variant colemak
 ```
 [Reference](https://superuser.com/questions/227727/ubuntu-switch-keyboard-layout-to-colemak)
+
+Switch to ```colemak``` keyboard layout (2)
+```
+cd ~/Downloads
+wget https://colemak.com/pub/unix/colemak-1.0.tar.gz
+tar -xf colemak-1.0.tar.gz
+cd colemak-1.0
+setxkbmap us; xmodmap xmodmap/xmodmap.colemak && xset r 66
+```
+[Reference](https://colemak.com/Unix)
 
 Switch back to ```us-qwert``` keyboard layout
 ```
