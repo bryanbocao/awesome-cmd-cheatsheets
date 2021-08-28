@@ -87,6 +87,22 @@ gnome-tweaks
 
 [Reference](https://askubuntu.com/questions/93624/how-do-i-swap-left-ctrl-with-left-alt-on-my-keyboard)
 
+Remap key
+```
+xev
+```
+Example: when pressing ```Left``` does not move left
+```
+KeyRelease event, serial 37, synthetic NO, window 0x5e00001,
+    root 0x1e2, subw 0x0, time 96268495, (1670,972), root:(1904,1200),
+    state 0x2010, keycode 113 (keysym 0xff7e, Mode_switch), same_screen YES,
+    XLookupString gives 0 bytes: 
+    XFilterEvent returns: False
+```
+```
+xmodmap -e 'keycode 113 = Left'
+```
+
 Adjust mouse wheel scroll speed
 ```
 sudo apt install imwheel
