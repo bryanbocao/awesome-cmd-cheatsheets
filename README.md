@@ -48,6 +48,12 @@ Check top 20 largest directories under the current folder
 du -Sh | sort -rh | head -20
 ```
 
+Check RAM Speed and Type
+```
+sudo dmidecode --type 17
+```
+[Reference](https://www.cyberciti.biz/faq/check-ram-speed-linux/)
+
 Grant read, write and execute permissions for everyone, convenient for logging
 ```
 chmod 777 <foldername/filename>
