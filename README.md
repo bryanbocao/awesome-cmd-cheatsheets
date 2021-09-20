@@ -215,6 +215,18 @@ gdown https://drive.google.com/uc?id=1h_8Ts11rf0GQ4_n6FgmCeBuFcWrRjJfa
 ```
 [Reference](https://stackoverflow.com/questions/25010369/wget-curl-large-file-from-google-drive)
 
+Setup Razer Core X
+```
+pcie_ports=native pci=assign-busses,nocrs,realloc iommu=on
+sudo update-grub
+sudo add-apt-repository ppa:hertg/egpu-switcher
+sudo apt install egpu-switcher
+sudo egpu-switcher setup
+```
+Then Reboot the system.
+
+[Reference](https://egpu.io/forums/thunderbolt-linux-setup/tutorial-ubuntu-18-04-rtx-2080-razer-core-v1/)
+
 ---
 
 ### Version Checking
