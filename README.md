@@ -1,5 +1,5 @@
 # quick-cheatsheets
-Quick search the commands you need.
+Quick **search** ```Ctrl/Cmd + F``` the commands you need.
 
 ---
 ### Linux
@@ -163,6 +163,49 @@ Start ```ssh``` server
 ```
 sudo systemctl start ssh
 ```
+---
+ssh via public/private key
+
+also a alterniative solution to ```Permission Denied (publickey)``` problem.
+
+**Local Machine**
+```
+mkdir ~/.ssh
+chmod 700 ~/.ssh
+cd ~/.ssh
+ssh-keygen -t rsa
+```
+Terminal
+```
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/<user>/.ssh/id_rsa): mykey
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in mykey.
+Your public key has been saved in mykey.pub.
+```
+Enter key name (e.g. ```mykey``` on Terminal). Remember the ```passphrase``` yourself.
+
+Executing the following command may still encounter the same issue of ```Permission denied (publickey).```
+```
+ssh-copy-id -i ~/.ssh/mykey <user>@<remote_host>
+```
+
+**Remote Machine**
+```
+cd ~/.ssh
+scp <user>@<local_host>:/home/<user>/.ssh/mykey.pub ~/.ssh/authorized_keys
+```
+
+**Local Machine**
+```
+ssh -i ~/.ssh/mykey <user>@<remote_host>
+```
+via ```passphrase```
+
+[Reference](https://www.ssh.com/academy/ssh/keygen)
+
+---
 Count Files
 ```
 ls | wc -l
