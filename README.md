@@ -3,9 +3,13 @@ Quick **search** ```Ctrl/Cmd + F``` the commands you need.
 
 ---
 ### Linux
-Check Ubuntu version
+Check Linux version
 ```
 lsb_release -a
+```
+Check Linux Architecture
+```
+uname -m
 ```
 
 Change computer hostname
