@@ -58,6 +58,16 @@ sudo dmidecode --type 17
 ```
 [Reference](https://www.cyberciti.biz/faq/check-ram-speed-linux/)
 
+Check Hard Drive Speed
+```
+sudo hdparm -Tt <Filesystem>
+```
+Example ```<Filesystem>=/dev/sdb2```
+```
+sudo hdparm -Tt /dev/sdb2
+```
+[Reference](https://askubuntu.com/questions/87035/how-to-check-hard-disk-performance)
+
 Grant read, write and execute permissions for everyone, convenient for logging
 ```
 chmod 777 <foldername/filename>
