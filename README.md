@@ -290,6 +290,8 @@ Then Reboot the system.
 
 [Reference](https://egpu.io/forums/thunderbolt-linux-setup/tutorial-ubuntu-18-04-rtx-2080-razer-core-v1/)
 
+[Install Docker on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04)
+
 ---
 
 ### Version Checking
