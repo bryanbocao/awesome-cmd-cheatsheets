@@ -447,7 +447,7 @@ Open Atom app: ```Packages -> Remote Atom -> Start Server```
 
 remote server
 ```
-curl -o /usr/local/bin/rmate https://raw.githubusercontent.com/aurora/rmate/master/rmate
+sudo curl -o /usr/local/bin/rmate https://raw.githubusercontent.com/aurora/rmate/master/rmate
 sudo chmod +x /usr/local/bin/rmate
 ```
 #### Usage
@@ -455,6 +455,7 @@ local machine
 ```
 ssh -R 52698:localhost:52698 <user@example.com>
 ```
+remote machine
 ```
 rmate <test.txt>
 ```
