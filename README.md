@@ -432,10 +432,19 @@ editor:delete-line
 Search ```ctrl-d``` (which you want to use) in the "Search keybindings" box
 
 Click ```your keymap file```, then it will navigate to ```.atom/keymap.cson```, enter the following text in this file
+
+**Linux**:
 ```
 'atom-text-editor:not([mini])':
   'ctrl-d': 'editor:delete-line'
 ```
+
+**macOS**
+```
+'atom-text-editor:not([mini])':
+  'cmd-d': 'editor:delete-line'
+```
+
 Save the file ```.atom/keymap.cson``` and restart Atom to take effect.
 
 ### remote-atom
