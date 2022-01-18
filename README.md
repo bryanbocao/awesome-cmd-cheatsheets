@@ -77,6 +77,12 @@ Grant read, write and execute permissions for everyone recursively, convenient f
 chmod -R 777 <foldername/filename>
 ```
 
+Enable syntax highlighting in vim on Mac
+```
+echo "syntax on" >> ~/.vimrc
+```
+[Reference](https://apple.stackexchange.com/questions/320287/how-do-i-enable-syntax-highlighting-in-vim-on-mac)
+
 Switch to ```colemak``` keyboard layout (1)
 ```
 setxkbmap us -variant colemak
