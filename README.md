@@ -52,13 +52,13 @@ Check top 20 largest directories under the current folder
 du -Sh | sort -rh | head -20
 ```
 
-Check RAM Speed and Type
+Check RAM speed and type
 ```
 sudo dmidecode --type 17
 ```
 [Reference](https://www.cyberciti.biz/faq/check-ram-speed-linux/)
 
-Check Hard Drive Speed
+Check hard drive speed
 ```
 sudo hdparm -Tt <Filesystem>
 ```
@@ -352,6 +352,14 @@ git config --global user.email "<you@example.com>"
 Set global username
 ```
 git config --global user.name "<Your Name>"
+```
+
+---
+
+### Conda
+List env names
+```
+conda info --envs
 ```
 
 ---
