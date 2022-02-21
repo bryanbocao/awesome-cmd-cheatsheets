@@ -250,7 +250,7 @@ Mount a new disk ```/dev/sdb1``` not shown by ```df -h``` but listed by ```ls /d
 ```
 sudo vim /etc/fstab
 ```
-add the below line to the end of the file:
+add the below line to the end of the file
 ```
 /dev/sdb1 /ssd  ext4  defaults  0 0
 ```
@@ -362,7 +362,29 @@ List env names
 conda info --envs
 ```
 
+Clone env ```<env_name>``` from machine ```source``` to ```destination```
+
+In ```source``` machine
+```
+conda list --explicit > <env_name>.txt
+```
+Example ```<env_name>=cln_env```
+```
+conda list --explicit > cln_env.txt
+```
+Then ```cln_env.txt``` to ```destination``` machine
+
+In ```destination``` machine
+```
+conda create --name <env_name> --file <path_to_><env_name>.txt
+```
+Example ```<env_name>=cln_env``` under the ```<path_to_>``` folder
+```
+conda create --name cln_env --file cln_env.txt
+```
+
 ---
+
 
 ### Using Jupyter Notebook on Local/Remote Machines
 Launch jupyter notebook kernel on a remote server
