@@ -495,6 +495,7 @@ remote server
 sudo curl -o /usr/local/bin/rmate https://raw.githubusercontent.com/aurora/rmate/master/rmate
 sudo chmod +x /usr/local/bin/rmate
 ```
+
 #### Usage
 local machine
 ```
@@ -505,3 +506,17 @@ remote machine
 rmate <test.txt>
 ```
 [Reference](https://atom.io/packages/remote-atom)
+
+#### Miscellaneous
+Write latex-like math equations in Markdown in Github *.md files
+```
+<img src="https://render.githubusercontent.com/render/math?math={<latex-like_equations>}">
+```
+Fill the placeholder ```<latex-like_equations>```. Example
+```
+<img src="https://render.githubusercontent.com/render/math?math={\kappa_{\Theta}=\frac{\lambda_{max}}{\lambda_{min}}}">
+```
+Display
+<img src="https://render.githubusercontent.com/render/math?math={\kappa_{\Theta}=\frac{\lambda_{max}}{\lambda_{min}}}">
+
+[Reference](https://gist.github.com/a-rodin/fef3f543412d6e1ec5b6cf55bf197d7b?permalink_comment_id=4051474#gistcomment-4051474)
