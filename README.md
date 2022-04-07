@@ -281,6 +281,41 @@ and ```sudo mount /ssd``` again, you will see the new disk by ```df -h```
 
 [Reference](https://unix.stackexchange.com/questions/315063/mount-wrong-fs-type-bad-option-bad-superblock)
 
+---
+Rename the directory name listed under the ```Mounted on``` column after ```df -h```
+
+Example: remove ```_``` from ```/_eDrive``` where ```/_eDrive``` is the current directory of the external drive to be renamed.
+```
+df -h
+```
+```
+Filesystem      Size  Used Avail Use% Mounted on
+...
+/dev/sdc        1.8T  1.5T  306G  83% /_eDrive
+```
+```
+sudo umount /_eDrive
+sudo mkdir /eDrive
+sudo vi /etc/fstab
+```
+Append
+```
+/dev/sdc /eDrive        ext4    defaults        0       0
+```
+to the end of this file.
+```
+sudo mount /dev/sdc
+```
+Then run ```df -h``` and you should be able to see
+```
+Filesystem      Size  Used Avail Use% Mounted on
+...
+/dev/sdc        1.8T  1.5T  306G  83% /eDrive
+```
+[Reference](https://www.thegeekdiary.com/how-to-change-or-rename-a-mount-point-in-linux/)
+
+---
+
 Download files from Google Drive
 ```
 pip install gdown
