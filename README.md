@@ -487,6 +487,10 @@ Select multiple lines
 ```
 Cmd + Shift + L
 ```
+Combine multiple lines in one row
+```
+Cmd + J
+```
 
 ### remote-atom
 local machine
