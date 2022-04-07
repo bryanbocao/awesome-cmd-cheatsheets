@@ -83,6 +83,16 @@ echo "syntax on" >> ~/.vimrc
 ```
 [Reference](https://apple.stackexchange.com/questions/320287/how-do-i-enable-syntax-highlighting-in-vim-on-mac)
 
+Set default colorscheme in vim
+
+Add ```colorscheme <colorscheme>``` in ```~/.vimrc```
+
+Example ```<colorscheme>=industry```
+```
+vim ~/.vimrc
+colorscheme industry
+```
+
 Switch to ```colemak``` keyboard layout (1)
 ```
 setxkbmap us -variant colemak
