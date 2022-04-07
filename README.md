@@ -483,6 +483,11 @@ Click ```your keymap file```, then it will navigate to ```.atom/keymap.cson```, 
 
 Save the file ```.atom/keymap.cson``` and restart Atom to take effect.
 
+Select multiple lines
+```
+Cmd + Shift + L
+```
+
 ### remote-atom
 local machine
 ```
