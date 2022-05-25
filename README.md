@@ -258,6 +258,11 @@ ffmpeg -framerate 30 -i /home/username/Data/RGB_copy/image-%05d.png -c:v libx264
 
 Mount a new disk ```/dev/sdb1``` not shown by ```df -h``` but listed by ```ls /dev/sd*``` or ```sudo fdisk -l```
 ```
+sudo mkdir /ssh
+```
+Otherwise, it may encounter the issue of ```mount: /ssh: mount point does not exist.```
+Then
+```
 sudo vim /etc/fstab
 ```
 add the below line to the end of the file
