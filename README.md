@@ -52,6 +52,19 @@ Check top 20 largest directories under the current folder
 du -Sh | sort -rh | head -20
 ```
 
+Add a new path <new_bin_path>
+```
+export PATH=$PATH:<new_bin_path>
+```
+Example: ```<new_bin_path>=/home/user/.local/bin```
+```
+export PATH=$PATH:/home/user/.local/bin
+```
+Display ```$PATH``` to verify
+```
+echo $PATH
+```
+
 Check RAM speed and type
 ```
 sudo dmidecode --type 17
