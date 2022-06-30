@@ -517,6 +517,10 @@ docker run --ipc=host --shm-size=16384m -it -v /:/share --gpus all --network=bri
 ```
 nvidia-docker run --ipc=host --shm-size=16384m -it -v /:/share --network=bridge <IMAGE_ID> /bin/bash
 ```
+### Bash into a Running Container
+```
+docker exec -it <CONTAINER_ID> /bin/bash
+```
 
 ---
 
