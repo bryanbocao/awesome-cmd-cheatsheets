@@ -510,6 +510,13 @@ docker ps -a
 CONTAINER ID   IMAGE          COMMAND          CREATED         STATUS                       PORTS     NAMES
 <CONTAINER_ID>   <IMAGE_ID>   "/bin/bash"      6 minutes ago   Up 6 minutes                           funny_mcnulty
 ```
+### Run a Container with Access to GPUs
+```
+docker run --ipc=host --shm-size=16384m -it -v /:/share --gpus all --network=bridge <IMAGE_ID> /bin/bash
+```
+```
+nvidia-docker run --ipc=host --shm-size=16384m -it -v /:/share --network=bridge <IMAGE_ID> /bin/bash
+```
 
 ---
 
