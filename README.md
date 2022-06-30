@@ -501,6 +501,18 @@ CUDA_VISIBLE_DEVICES=0 python train.py
 
 ---
 
+### Check Running Containers
+```
+docker ps -a
+```
+```
+(base) <user>@<machine>:~$ docker ps -a
+CONTAINER ID   IMAGE          COMMAND          CREATED         STATUS                       PORTS     NAMES
+<CONTAINER_ID>   <IMAGE_ID>   "/bin/bash"      6 minutes ago   Up 6 minutes                           funny_mcnulty
+```
+
+---
+
 ### Using TensorBoard Remotely
 Run Tensorboard on a remote server
 ```
