@@ -332,6 +332,12 @@ Filesystem      Size  Used Avail Use% Mounted on
 ```
 [Reference](https://www.thegeekdiary.com/how-to-change-or-rename-a-mount-point-in-linux/)
 
+Kill all background jobs
+```
+kill $(jobs -p)
+```
+[Reference](https://unix.stackexchange.com/questions/43527/kill-all-background-jobs)
+
 ---
 
 Download files from Google Drive
