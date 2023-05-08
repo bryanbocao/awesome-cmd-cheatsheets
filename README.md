@@ -269,7 +269,7 @@ Example ```FRAME_RATE=30 DATASET_DEST_IMG_PATH=/home/username/Data/RGB_copy/```
 ffmpeg -framerate 30 -i /home/username/Data/RGB_copy/image-%05d.png -c:v libx264 -profile:v high -crf 20 -pix_fmt yuv420p /home/username/Data/RGB_copy/RGB_video.mp4
 ```
 
-Mount a new disk ```/dev/sdb1``` not shown by ```df -h``` but listed by ```ls /dev/sd*``` or ```sudo fdisk -l```
+Mount a new disk ```/dev/sdb1``` not shown by ```df -h``` but listed by ```lsblk```, ```ls /dev/sd*``` or ```sudo fdisk -l```
 ```
 sudo mkdir /ssh
 ```
