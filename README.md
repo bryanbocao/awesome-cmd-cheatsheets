@@ -269,6 +269,34 @@ Example ```FRAME_RATE=30 DATASET_DEST_IMG_PATH=/home/username/Data/RGB_copy/```
 ffmpeg -framerate 30 -i /home/username/Data/RGB_copy/image-%05d.png -c:v libx264 -profile:v high -crf 20 -pix_fmt yuv420p /home/username/Data/RGB_copy/RGB_video.mp4
 ```
 
+List all disk devices
+```
+lsblk
+```
+e.g.
+```
+NAME   FSTYPE   LABEL  UUID                                 FSAVAIL FSUSE% MOUNTPOINT
+loop0  squashfs                                                   0   100% /snap/bare/5
+loop1  squashfs                                                   0   100% /snap/core18/1705
+loop2  squashfs                                                   0   100% /snap/snap-store/433
+loop3  squashfs                                                   0   100% /snap/snapd/7264
+loop4  squashfs                                                   0   100% /snap/gnome-3-34-1804/24
+loop5  squashfs                                                   0   100% /snap/gtk-common-themes/1506
+loop6  squashfs                                                   0   100% /snap/gtk-common-themes/1535
+loop7  squashfs                                                   0   100% /snap/core18/2745
+loop8  squashfs                                                   0   100% /snap/gnome-3-34-1804/93
+sda
+├─sda1 vfat            55D0-8CD7                             504.9M     1% /boot/efi
+└─sda2 ext4            53be03f3-b5bf-42a6-8f0c-0252d025f6b7  848.5G     2% /
+sdb
+├─sdb1 vfat            FACF-6821
+├─sdb2
+├─sdb3 ntfs            7C0A175A0A17112E
+├─sdb4 ntfs            5CAC7AEAAC7ABDD8
+├─sdb5 ntfs     新加卷 141A38A91A3889AE
+└─sdb6 ntfs     新加卷 A2042BC1042B9777
+```
+
 Mount a new disk ```/dev/sdb1``` not shown by ```df -h``` but listed by ```lsblk```, ```ls /dev/sd*``` or ```sudo fdisk -l```
 ```
 sudo mkdir /ssh
