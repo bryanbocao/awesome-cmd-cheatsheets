@@ -297,6 +297,11 @@ sdb
 └─sdb6 ntfs     新加卷 A2042BC1042B9777
 ```
 
+Format Disk Partition ```/dev/sdb``` with ext4 File System
+```
+sudo mkfs -f ext4 /dev/sdb
+```
+
 Mount a new disk ```/dev/sdb1``` not shown by ```df -h``` but listed by ```lsblk```, ```ls /dev/sd*``` or ```sudo fdisk -l```
 ```
 sudo mkdir /ssh
