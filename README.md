@@ -260,6 +260,13 @@ ls <foldername> | wc -l
 Rename images as preparation for video making
 [rename4video.py](https://github.com/BryanBo-Cao/quick-cheatsheets/blob/master/utils/rename4video.py)
 
+Unzip all zipped files in a directory and store the content with the same folder name
+```
+find . -name '*.zip' -exec sh -c 'unzip -d "${1%.*}" "$1"' _ {} \;
+```
+[[Reference](https://stackoverflow.com/questions/2374772/unzip-all-files-in-a-directory)]
+
+
 Create a video from images
 ```
 ffmpeg -framerate <FRAME_RATE> -i <DATASET_DEST_IMG_PATH>/image-%05d.png -c:v libx264 -profile:v high -crf 20 -pix_fmt yuv420p <DATASET_DEST_IMG_PATH>/RGB_video.mp4
