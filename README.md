@@ -70,6 +70,12 @@ Check CPU information
 lscpu
 ```
 
+Check hardware model
+```
+dmidecode | grep -A3 '^System Information'
+```
+[Reference](https://unix.stackexchange.com/questions/75750/how-can-i-find-the-hardware-model-in-linux)
+
 Check RAM speed and type
 ```
 sudo dmidecode --type 17
