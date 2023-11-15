@@ -65,6 +65,11 @@ Display ```$PATH``` to verify
 echo $PATH
 ```
 
+Check CPU information
+```
+lscpu
+```
+
 Check RAM speed and type
 ```
 sudo dmidecode --type 17
