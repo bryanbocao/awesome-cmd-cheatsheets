@@ -271,6 +271,26 @@ ls <foldername> | wc -l
 Rename images as preparation for video making
 [rename4video.py](https://github.com/BryanBo-Cao/quick-cheatsheets/blob/master/utils/rename4video.py)
 
+Zip all folders in a directory and store the content in the corresponding folders with the same folder names
+
+Create a ```zip_folders.sh```:
+```
+#!/bin/bash
+
+# Assuming your folders are in the current directory
+for folder in */; do
+    # Trim trailing slash to get folder name
+    folder_name=${folder%/}
+    
+    # Create a zip file for each folder
+    zip -r "${folder_name}.zip" "$folder_name"
+done
+```
+```
+bash zip_folders.sh
+```
+Reference: ChatGPT 3.5
+
 Unzip all zipped files in a directory and store the content with the same folder name
 ```
 find . -name '*.zip' -exec sh -c 'unzip -d "${1%.*}" "$1"' _ {} \;
