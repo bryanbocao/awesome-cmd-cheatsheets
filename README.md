@@ -370,6 +370,10 @@ and ```sudo mount /ssd``` again, you will see the new disk by ```df -h```
 
 [Reference](https://unix.stackexchange.com/questions/315063/mount-wrong-fs-type-bad-option-bad-superblock)
 
+If ```ext4``` does not work, try ```exfat``` format
+
+[Reference](https://github.com/bryanbocao/quick-cheatsheets/issues/22)
+
 ---
 Rename the directory name listed under the ```Mounted on``` column after ```df -h```
 
