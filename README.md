@@ -362,7 +362,7 @@ If the following problem occurs
 ```
 mount: /ssd: wrong fs type, bad option, bad superblock on /dev/sdb1, missing codepage or helper program, or other error.
 ```
-do
+do (note that mkfs.ext4 will erase data!)
 ```
 mkfs.ext4 /dev/sdb1
 ```
