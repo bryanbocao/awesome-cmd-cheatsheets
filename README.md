@@ -268,6 +268,13 @@ Count Files in ```<foldername>```
 ```
 ls <foldername> | wc -l
 ```
+List the first 5 files
+```
+ls -U | head -n 5
+```
+Reference: ChatGPT 3.5
+
+
 Rename images as preparation for video making
 [rename4video.py](https://github.com/BryanBo-Cao/quick-cheatsheets/blob/master/utils/rename4video.py)
 
