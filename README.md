@@ -297,6 +297,11 @@ find . -name '*.zip' -exec sh -c 'unzip -d "${1%.*}" "$1"' _ {} \;
 ```
 [[Reference](https://stackoverflow.com/questions/2374772/unzip-all-files-in-a-directory)]
 
+Untar all tar files in a directory
+```
+for f in *.tar; do tar xf "$f"; done
+```
+[[Reference](https://stackoverflow.com/questions/583889/how-can-you-untar-more-than-one-file-at-a-time)]
 
 Create a video from images
 ```
