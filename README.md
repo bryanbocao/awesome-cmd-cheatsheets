@@ -272,6 +272,10 @@ List the first 5 files
 ```
 ls -U | head -n 5
 ```
+List the last 5 files
+```
+ls -U | tail -n 5
+```
 Reference: ChatGPT 3.5
 
 
