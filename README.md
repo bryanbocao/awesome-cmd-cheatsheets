@@ -170,6 +170,14 @@ bash <(curl -s http://www.nicknorton.net/mousewheel.sh)
 ```
 [Reference](https://dev.to/bbavouzet/ubuntu-20-04-mouse-scroll-wheel-speed-536o)
 
+If the aforementioned url broke, try
+```
+sudo apt install imwheel
+bash <(curl -s https://gist.githubusercontent.com/AshishKapoor/6f054e43578659b4525c47bf279099ba/raw/0b2ad8b67f02ebb01d99294b0ecb6feacc078f67/mousewheel.sh)
+```
+[Reference](https://askubuntu.com/questions/255890/how-can-i-adjust-the-mouse-scroll-speed)
+
+
 Stop laptop going to sleep when closing the lid
 ```
 sudo nano /etc/systemd/logind.conf
