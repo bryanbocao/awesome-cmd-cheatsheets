@@ -173,7 +173,7 @@ bash <(curl -s http://www.nicknorton.net/mousewheel.sh)
 If the aforementioned url broke, try
 ```
 sudo apt install imwheel
-bash <(curl -s https://gist.githubusercontent.com/AshishKapoor/6f054e43578659b4525c47bf279099ba/raw/0b2ad8b67f02ebb01d99294b0ecb6feacc078f67/mousewheel.sh)
+bash <(curl -s https://gist.hubusercontent.com/AshishKapoor/6f054e43578659b4525c47bf279099ba/raw/0b2ad8b67f02ebb01d99294b0ecb6feacc078f67/mousewheel.sh)
 ```
 [Reference](https://askubuntu.com/questions/255890/how-can-i-adjust-the-mouse-scroll-speed)
 
@@ -288,7 +288,7 @@ Reference: ChatGPT 3.5
 
 
 Rename images as preparation for video making
-[rename4video.py](https://github.com/BryanBo-Cao/quick-cheatsheets/blob/master/utils/rename4video.py)
+[rename4video.py](https://hub.com/BryanBo-Cao/quick-cheatsheets/blob/master/utils/rename4video.py)
 
 Zip all folders in a directory and store the content in the corresponding folders with the same folder names
 
@@ -520,6 +520,11 @@ git config --global user.email "<you@example.com>"
 Set global username
 ```
 git config --global user.name "<Your Name>"
+```
+
+Save user's credential
+```
+git config credential.helper store
 ```
 
 ---
