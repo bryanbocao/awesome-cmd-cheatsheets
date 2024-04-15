@@ -1,4 +1,4 @@
-# quick-cheatsheets
+# Awesome CMD Cheatsheets
 Quick **search** ```Ctrl/Cmd + F``` the commands you need.
 
 ---
