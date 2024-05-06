@@ -147,6 +147,12 @@ gnome-tweaks
 
 [Reference](https://askubuntu.com/questions/93624/how-do-i-swap-left-ctrl-with-left-alt-on-my-keyboard)
 
+Reset function keys by default on Ubuntu using an Apple keyboard
+```
+echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode
+```
+[Reference](https://askubuntu.com/questions/818413/how-can-i-toggle-the-fn-function-key)
+
 Remap key
 ```
 xev
