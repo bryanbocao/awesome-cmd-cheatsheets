@@ -633,6 +633,16 @@ docker run --ipc=host --shm-size=16384m -it -v /:/share --gpus all --network=bri
 ```
 nvidia-docker run --ipc=host --shm-size=16384m -it -v /:/share --network=bridge <IMAGE_ID> /bin/bash
 ```
+However, when you exit the container by ```exit```, it will also shut down.
+### Run a Container with Access to GPUs in Detached Mode ```-d```
+If you need to regularly exit and enter a container, it is recommended to run it in detached mode (in the background) with ```-d```:
+```
+docker run -d --ipc=host --shm-size=16384m -it -v /:/share --gpus all --network=bridge <IMAGE_ID> /bin/bash
+```
+```
+nvidia-docker run -d --ipc=host --shm-size=16384m -it -v /:/share --network=bridge <IMAGE_ID> /bin/bash
+```
+
 ### Bash into a Running Container
 ```
 docker exec -it <CONTAINER_ID> /bin/bash
